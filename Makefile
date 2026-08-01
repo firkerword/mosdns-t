@@ -34,8 +34,8 @@ endef
 
 define Download/mosdns-source
 	URL:= \
-		https://codeload.github.com/jasonxtt/mosdns/tar.gz/$(SOURCE_COMMIT) \
-		https://ghproxy.net/https://codeload.github.com/jasonxtt/mosdns/tar.gz/$(SOURCE_COMMIT)
+		https://codeload.github.com/jasonxtt/mosdns/tar.gz/$(SOURCE_COMMIT)? \
+		https://ghproxy.net/https://codeload.github.com/jasonxtt/mosdns/tar.gz/$(SOURCE_COMMIT)?
 	FILE:=$(SOURCE_ARCHIVE)
 	HASH:=$(SOURCE_HASH)
 endef
